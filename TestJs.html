@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<HTML> 
+<HEAD><TITLE>Visit card</TITLE></HEAD> 
+<BODY> 
+<SCRIPT type="text/javascript" language="JavaScript"> 
+<!--
+    var name = prompt('Input name','');
+var position = prompt('Input profession','');
+var phone = prompt('Input phone','');
+
+var visitcard = '<table width="100%" border="0">' +
+                '<tr>' +
+                '<td align="CENTER" valign="CENTER">' +
+                '<img src="qklla1.jpg" width="80" height="80">' +
+                '</td>' +
+                '<td align="CENTER">' +
+                '<b>' + name + '</b><br>' +
+                '<i>' + position + '</i><br>' +
+                '<font color="blue">' + phone + '</font>' +
+                '</td>' +
+                '</tr>' +
+                '</table>';
+
+document.write('<table width="100%" border="0" align="CENTER">');
+for (var y = 0; y < 12; y++) {
+    document.write('<tr>');
+    for (var x = 0; x < 3; x++) {
+        document.write('<td align="CENTER" style="border-style: dashed; border-width: thin;">');
+        document.write(visitcard);
+        document.write('</td>');
+    }
+    document.write('</tr>');
+}
+document.write('</table>');
+
+//--> 
+</SCRIPT> 
+</BODY> 
+</HTML>
